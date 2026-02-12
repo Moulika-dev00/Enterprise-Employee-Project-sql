@@ -107,7 +107,8 @@ WHERE emp_id IN (
 SELECT dept_name
 FROM Departments
 WHERE dept_id IN (
-  SELECT Employees
+  SELECT dept_id
+  FROM Employees
   GROUP BY dept_id
   HAVING COUNT(emp_id) > 1
 );
@@ -121,7 +122,7 @@ WHERE emp_id NOT IN (
 );
 
 -- Highest paid employee
-SELCT emp_name, salary
+SELECT emp_name, salary
 FROM Employees
 WHERE salary = (
   SELECT MAX(salary)
