@@ -1,7 +1,7 @@
 INSERT INTO Departments VALUES
-(1, 'IT', 'Hyderabad');
-(2, 'HR', 'Bangalore');
-(3, 'Finance', 'Mumbai');
+(1, 'IT', 'Hyderabad'),
+(2, 'HR', 'Bangalore'),
+(3, 'Finance', 'Mumbai'),
 (4, 'Operations', 'Chennai');
 
 INSERT INTO Employees VALUES
